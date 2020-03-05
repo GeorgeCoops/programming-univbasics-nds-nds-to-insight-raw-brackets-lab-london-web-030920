@@ -15,9 +15,10 @@ def directors_totals(nds)
       individual_gross = 0
       director_name = nds[row_index][:name]
       num = nds[row_index][:movies][inner_index][:worldwide_gross]
+
       individual_gross += num
 
-      result[director_name] = num
+      result[director_name] = individual_gross
 
       inner_index += 1
     end
