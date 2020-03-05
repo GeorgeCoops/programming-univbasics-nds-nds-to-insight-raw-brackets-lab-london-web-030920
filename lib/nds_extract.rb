@@ -18,7 +18,7 @@ def directors_totals(nds)
       individual_gross = 0
 
       result[director_name] += nds[director_index][:movies][movie_index][:worldwide_gross]
-binding.pry
+#binding.pry
       #individual_gross += num
 
       #result[director_name] = individual_gross
