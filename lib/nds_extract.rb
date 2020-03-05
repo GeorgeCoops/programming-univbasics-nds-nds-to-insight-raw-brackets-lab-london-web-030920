@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pry'
 
 
 def directors_totals(nds)
@@ -15,7 +16,7 @@ def directors_totals(nds)
       individual_gross = 0
       director_name = nds[row_index][:name]
       num = nds[row_index][:movies][inner_index][:worldwide_gross]
-
+binding.pry
       individual_gross += num
 
       result[director_name] = individual_gross
