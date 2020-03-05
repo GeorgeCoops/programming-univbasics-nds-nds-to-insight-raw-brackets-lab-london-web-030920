@@ -16,7 +16,7 @@ def directors_totals(nds)
   inner_len = nds[director_index][:movies].length
   while inner_index < inner_len do
       individual_gross = 0
-      
+
       num = nds[director_index][:movies][inner_index][:worldwide_gross]
 binding.pry
       individual_gross += num
